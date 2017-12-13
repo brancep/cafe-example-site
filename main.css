@@ -1,0 +1,187 @@
+:root {
+    --color-primary: #fff;
+    --color-secondary: #EDC634;
+    --color-tertiary: rgb(77, 53, 4);
+    --header-bg: rgba(77, 53, 4, .78);
+    --main-pfont: 14px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+h3 {
+    font-size: 36px;
+    color: var(--color-secondary);
+}
+
+p>stong {
+    font-size: 18px;
+}
+
+p {
+    font-size: var(--main-pfont);
+}
+
+body {
+    margin: 0;
+    font-family: Avenir Next, sans-serif;
+    color: var(--color-primary);
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/img/main_cafe_bg.jpg'), linear-gradient(82deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
+    background-blend-mode: multiply;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(5px);
+    transform: scale(1.2);
+    z-index: -1;
+}
+
+.site-wrapper {
+    position: fixed;
+}
+
+.header-wrapper {
+    display: block;
+    width: 100%;
+    border-top: solid 20px var(--color-secondary);
+}
+
+header {
+    width: 100%;
+    background-color: var(--header-bg);
+}
+
+#header-slope {
+    width: 100vw;
+    fill: var(--header-bg);
+    height: 120px;
+}
+
+.social-wrapper {
+    display: block;
+    float: right;
+    margin: 0 20px;
+    transform: translateY(-100px)
+}
+
+.social-wrapper img {
+    width: 30px;
+}
+
+#branding {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#branding h1 {
+    font-size: 36px;
+    line-height: 2.2rem;
+}
+
+#tagline {
+    display: block;
+    font-size: 72px;
+    max-width: 280px;
+    line-height: 1em;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+    width: 100%;
+    transform: translateY(-100px);
+}
+
+.block-wrapper {
+    max-width: 320px;
+}
+
+.content-block {
+    display: block;
+    margin: 20px 0;
+}
+
+
+/* navigation grid */
+
+.nav-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    padding-top: 100vh;
+}
+
+.nav-grid-item {
+    position: relative;
+    height: 50vh;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    transition: all .5s ease-in-out;
+}
+
+.nav-grid-item:hover {
+    background-color: rgba(0,0,0,0.55);
+}
+
+.nav-grid-item:hover + span {
+    display: block;
+}
+
+.grid-item-info {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+}
+
+.grid-item-info h2{
+    font-size: 48px;
+}
+
+.grid-item-info span {
+    /* display: none; */
+    font-size: 48px;
+    color: var(--color-secondary);
+}
+
+#menu-nav {
+    background-image: url('assets/img/menu_bg.jpg');
+}
+
+#shops-nav {
+    background-image: url('assets/img/shops_bg.jpg');
+}
+
+#crew-nav {
+    background-image: url('assets/img/team_bg.jpg');
+}
+
+#events-nav {
+    background-image: url('assets/img/events_bg.jpg');
+}
