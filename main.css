@@ -218,7 +218,7 @@ header {
 .modal-content {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 70%;
     color: black;
     text-align: center;
     background: #D8D8D8;
@@ -261,17 +261,19 @@ header {
 
 .card-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 40px;
     width: 100%;
     margin-top: 100px;
 }
 
-figure {
+.card {
+    display: block;
     position: relative;
     margin-bottom: 40px;
     padding: 10px;
+    width: auto;
     background: var(--color-primary);
     border-top: solid 10px var(--color-secondary);
     border-radius: var(--border-rad);
@@ -279,7 +281,7 @@ figure {
 
 figcaption {
     padding-top: 20px;
-    width: 200px;
+    width: 80%;
     margin: auto;
 }
 
@@ -300,3 +302,25 @@ figcaption {
     font-size: 24px;
     font-weight: bold;
 }
+
+
+/* @media screen and ( max-width: 1040px) {
+    .card {
+        width: 40%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+
+@media screen and ( max-width: 780px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+    }
+} */
