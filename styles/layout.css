@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    border-top: solid 20px var(--color-secondary);
+    background-color: var(--header-bg);
+    z-index: 1000;
+}
+
+#header-slope {
+    width: 100vw;
+    position: fixed;
+    fill: var(--header-bg);
+    height: 60px;
+    margin-top: 96px;
+    z-index: 1000;
+}
+
+/* navigation grid */
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    position: relative;
+    z-index: 10001;
+}
+
+.nav-grid-item {
+    position: relative;
+    height: 50vh;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+#menu-nav {
+    background-image: url('../assets/img/menu_bg.jpg');
+}
+
+#shops-nav {
+    background-image: url('../assets/img/shops_bg.jpg');
+}
+
+#crew-nav {
+    background-image: url('../assets/img/team_bg.jpg');
+}
+
+#events-nav {
+    background-image: url('../assets/img/events_bg.jpg');
+}

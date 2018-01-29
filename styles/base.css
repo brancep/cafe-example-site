@@ -1,0 +1,76 @@
+    :root {
+    --color-primary: #fff;
+    --color-secondary: #EDC634;
+    --color-tertiary: rgb(77, 53, 4);
+    --header-bg: rgba(77, 53, 4, .78);
+    --main-pfont: 14px;
+    --border-rad: 0 0 20px 20px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    letter-spacing: .2rem;
+    font-weight: normal;
+    font-family: 'anton', sans-serif;
+}
+
+h1 {
+    color: var(--color-primary);
+    font-size: 72px;
+}
+
+#crew-content h2 {
+    color: black;
+}
+
+h3 {
+    font-size: 36px;
+    color: var(--color-secondary);
+}
+
+p {
+    font-size: var(--main-pfont);
+}
+
+.fa .fa-chevron {
+    color: var(--color-secondary);
+    animation: scale 2s infinite;
+}
+
+body {
+    margin: 0;
+    font-family: Avenir Next, sans-serif;
+    color: var(--color-primary);
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/img/main_cafe_bg.jpg'), linear-gradient(80deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    transform: scale(1.2);
+    z-index: -1;
+}
+
